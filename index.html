@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Google Fonts (Optional for style) -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('about')">About</a></li>
+            <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            <li><a href="#" onclick="showSection('clients')">Our Clients</a></li>
+            <li><a href="#" onclick="showSection('career')">Career</a></li>
+        </ul>
+    </nav>
+    
+    <header>
+        <h1>Sakshi Naik</h1>
+        <img src="images/Sakshi.jpg" alt="My Photo" class="profile-pic">
+        <p>Web Developer | Designer | Learner</p>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="profile-info">
+            <h2 class="welcome-title">Welcome to My Dashboard</h2>
+        </div>
+        <div class="services">
+            <h3>Our Services</h3>
+            <div class="service-cards">
+                <div class="service-card">
+                    <h4>Mobile Application Development</h4>
+                    <p>We build modern and responsive mobile applications for iOS and Android.</p>
+                </div>
+                <div class="service-card">
+                    <h4>Web Applications</h4>
+                    <p>Creating dynamic web applications with user-friendly designs and robust functionality.</p>
+                </div>
+                <div class="service-card">
+                    <h4>Website Development</h4>
+                    <p>Designing and developing responsive, interactive, and optimized websites.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- About Section -->
+   <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+        I am Sakshi Sanjay Naik, currently working as an Associate Data Science Consultant at GenAI, based in Pune, India. 
+        I hold a Bachelor's degree in Computer Science from Shivaji University, Kolhapur with a CGPA of 7.75 (2024), 
+        and I am currently pursuing my Master of Computer Science (MCA) from Bharti Vidyapeeth, Kolhapur (2025).
+    </p>
+    <p>
+        I am a detail-oriented professional with experience in data science and visualization using Python, SQL, Power BI, 
+        Machine Learning, and AI. I am eager to leverage technical skills to drive data-driven decision-making and business improvements.
+    </p>
+    <p>
+        <strong>Technical Skills:</strong> Python, Pandas, SQL, Machine Learning, AI<br>
+        <strong>Visualization Tools:</strong> Power BI
+    </p>
+    <p>
+        <strong>Certifications:</strong><br>
+        Seven Mentor Institute Pune – Python, MySQL, Power BI, Statistical Analysis, Machine Learning
+    </p>
+</section>
+
+
+  <!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <div class="contact-container">
+        <!-- Left Contact Info -->
+        <div class="contact-info">
+            <div class="contact-box">
+                <i class="fas fa-envelope"></i>
+                <h4>Email</h4>
+                <p><a href="mailto:dhiraj.patil@example.com">sakshi@gmail.com</a></p>
+            </div>
+            <div class="contact-box">
+                <i class="fas fa-phone-alt"></i>
+                <h4>Phone</h4>
+                <p><a href="tel:+1234567890">7020122137</a></p>
+            </div>
+        </div>
+
+        <!-- Right Contact Form -->
+        <div class="contact-form">
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="mobile" placeholder="Mobile Number" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Clients Section -->
+    <!-- <section id="clients" class="clients">
+        <h2>Our Clients</h2>
+        <div class="client-card">
+            <h4>Client 1</h4>
+            <p>Client 1 is a tech company focused on innovation in software development.</p>
+        </div>
+        <div class="client-card">
+            <h4>Client 2</h4>
+            <p>Client 2 is a startup providing unique solutions in the fintech space.</p>
+        </div>
+        <div class="client-card">
+            <h4>Client 3</h4>
+            <p>Client 3 is a leading brand in the e-commerce industry.</p>
+        </div>
+    </section> -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients-section">
+        <h2>Our Clients</h2>
+        <div class="client-marquee">
+            <div class="client-track">
+                <img src="images/clients/Microsoft.jpg" alt="Microsoft" class="client-logo">
+                <img src="images/clients/OpenAi.jpg" alt="OpenAI" class="client-logo">
+                <img src="images/clients/Google.png" alt="Google" class="client-logo">
+                <img src="images/clients/TCS.jpg" alt="TCS" class="client-logo">
+                <img src="images/clients/Deloit.jpg" alt="Deloit" class="client-logo">
+    
+                <!-- Repeat for smooth looping -->
+                <img src="images/clients/Microsoft.jpg" alt="Microsoft" class="client-logo">
+                <img src="images/clients/OpenAi.jpg" alt="OpenAI" class="client-logo">
+                <img src="images/clients/Google.png" alt="Google" class="client-logo">
+                <img src="images/clients/TCS.jpg" alt="TCS" class="client-logo">
+                <img src="images/clients/Deloit.jpg" alt="Deloit" class="client-logo">
+            </div>
+        </div>
+    </section>
+    
+    
+
+
+
+
+    <!-- Career Section -->
+    <section id="career" class="career">
+        <h2>Career Opportunities</h2>
+        <p>We are always looking for talented and passionate individuals to join our team.</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Sakshi Naik All Right Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
